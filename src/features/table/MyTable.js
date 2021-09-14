@@ -20,17 +20,16 @@ function randomizer() {
 function createMatrix(m, n) {
   let array = [], subarray = [];
   for (let i = 0; i < n; i++) {
+    subarray.length = 0;
     for (let j = 0; j < m; j++) {
-      subarray[j] = randomizer();
+      subarray.push(randomizer());
     }
-    array[i] = subarray;
+    array[i] = subarray.slice(0);
   }
   return array;
 }
 
 const rows = createMatrix(9, 9);
-console.log('rows: ', rows);
-
 
 export default function MyTable() {
   const classes = useStyles();

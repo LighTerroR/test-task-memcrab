@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './features/header/Header';
-import MyTable from './features/table/Table';
+import MyTable from './features/table/MyTable';
 
 function App() {
   return (
