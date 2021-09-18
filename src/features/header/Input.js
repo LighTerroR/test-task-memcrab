@@ -1,7 +1,12 @@
-import TextField from '@material-ui/core/TextField';
+import './Input.css'
 
 function Input(props) {
-  return <TextField id="standard-basic" label={props.label} size='medium' />;
+  return (
+    <div className="labelContainer">
+      <label>{props.label}</label>
+      <input />
+    </div>
+  );
 }
 
 export default Input;
